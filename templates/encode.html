@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/index/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/index/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+                    <h1 class="panel-title">Encode</h1>
+                        <form name="form" role="form" method="POST" enctype="multipart/form-data" action="/encode">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Plaintext" name="plaintext" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="text" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Select your image</label>
+                                    <input type="file" name="photo" class="form-control-file" id="exampleFormControlFile1">
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button class="btn btn-block btn-success" >Encode</button>
+                                </div>
+                            </fieldset>
+                        </form>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; An Image Steganography Tool</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/index/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
